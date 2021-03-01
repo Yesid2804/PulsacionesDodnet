@@ -5,6 +5,7 @@
 	<title>Registro</title>
 	<link rel="stylesheet" href="styleInicio.css"> 
 	<link rel="stylesheet" href="styleFormulario.css">
+	<script src="formulario.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -23,33 +24,26 @@
 	<main class="main">
 		<div class="container">
 
-	<script type="text/javascript">
-		function calcularPulsaciones(){
-			 
-		}
-	</script>
 	
 <section class="formulario-registro">
 	<h4><center>Registrar Pulsaciones</center></h4>
 	<input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre"></input>
-	<input class="controls" type="number" name="edad" id="edad" placeholder="Edad"></input>
+	<input class="controls" type="number" name="edad" id="edad" placeholder="Edad" value="edad"></input>
 	
 
 	<p class="controls" >
-		<label class="controls-checbox" for="">Genero: </label>
-		<form>
-			<input class="controls-checbox"  type="radio" name="genero" id="hombre"/>
-			<label for="hombre">Hombre</label>
+		<label class="controls-checbox" for="">Genero:</label>
+		<input class="controls-checbox"  type="radio" name="genero" value="hombre" id="hombre"/>
+		<label for="hombre">Hombre</label>
+	
+		<input class="controls-checbox" type="radio" name="genero" value="mujer" id="mujer"/>
+		<label for="mujer">Mujer</label>
 		
-			<input class="controls-checbox" type="radio" name="genero" id="mujer"/>
-			<label for="mujer">Mujer</label>
-	
-		</p>
-	
-		<br>
-	
+		<p class="controlsForm">
+
 		<input class="botons" type="submit" value="Registrar" onclick="calcularPulsaciones()">
-		</form>
+
+		<input class="controlsResultado" type="text" name="labelResultado" id="idResultado" readonly="readonly"></input>
 
 </section> 
 		</div>
