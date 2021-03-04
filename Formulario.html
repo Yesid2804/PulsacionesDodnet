@@ -5,6 +5,7 @@
 	<title>Registro</title>
 	<link rel="stylesheet" href="styleInicio.css"> 
 	<link rel="stylesheet" href="styleFormulario.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<script src="formulario.js"></script>
 </head>
 <body>
@@ -27,7 +28,7 @@
 	
 <section class="formulario-registro">
 	<h4><center>Registrar Pulsaciones</center></h4>
-	<input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre"></input>
+	<input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre" ></input>
 	<input class="controls" type="number" name="edad" id="edad" placeholder="Edad" value="edad"></input>
 	
 
@@ -41,7 +42,7 @@
 		
 		<p class="controlsForm">
 
-		<input class="botons" type="submit" value="Registrar" onclick="calcularPulsaciones()">
+		<input class="botons" type="submit" value="Registrar" onclick="registrar()">
 
 		<input class="controlsResultado" type="text" name="labelResultado" id="idResultado" readonly="readonly"></input>
 

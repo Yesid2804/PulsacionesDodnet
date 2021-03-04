@@ -5,9 +5,10 @@
 
 	<link href="styleInicio.css" rel="stylesheet">
 	<link href="styleConsulta.css" rel="stylesheet">
+	<script src="consulta.js"></script>
 
 </head>
-<body>
+<body onload="actualizarTabla()">
 	<header class="header">
 		<div class="container logo-nav-container">
 			<img src="C:\Users\yeshe\Pictures\Exposicion html\logo2.png">
@@ -23,31 +24,18 @@
 	<main class="table">
 		<center><h3>Datos Registrados</h3></center>
 		<table>
-			<tr>
-				<th>Nombre</th>
-				<th>edad</th>
-				<th>Genero</th>
-				<th>Pulsaciones</th>
-			</tr>
-			<tr>
-				<td>Luis</td>
-				<td>33</td>
-				<td>Masculino</td>
-				<td>156</td>
-			  </tr>
-			  
-			  <tr>
-				<td>maria</td>
-				<td>28</td>
-				<td>Femenino</td>
-				<td>104</td>
-			  </tr>
-			  <tr>
-				<td>juan</td>
-				<td>21</td>
-				<td>Masculino</td>
-				<td>136</td>
-			  </tr>
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>edad</th>
+					<th>Genero</th>
+					<th>Pulsaciones</th>
+				</tr>
+			</thead>
+			<tbody id="listaPersonas">
+
+			</tbody>
+			
 		</table>
 	</main>
 	<footer class="footer">
